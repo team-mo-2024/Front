@@ -13,7 +13,7 @@ export default function Login() {
     const handleId = (e) => {
         const value = e.target.value;
         setId(value);
-        const regex = /^[0-9]*$/;
+        const regex = /^[0-9]{3}-[0-9]{3}$/;
         if (regex.test(value)) {
             setIdValid(true);
         } else {
@@ -35,7 +35,7 @@ export default function Login() {
     const handleIdCode = (e) => {
         const value = e.target.value;
         setIdCode(value);
-        const regex = /^[0-9]{3}-[0-9]{3}$/;
+        const regex = /^[0-9]{5}$/;
         if (regex.test(value)) {
             setIdCodeValid(true);
         } else {
@@ -68,7 +68,7 @@ export default function Login() {
                     <input
                         type='text'
                         className='input'
-                        placeholder='동호수'
+                        placeholder='동호수 (123-456)'
                         value={id}
                         onChange={handleId}
                     />
@@ -100,7 +100,7 @@ export default function Login() {
                     <input
                         type='text'
                         className='input'
-                        placeholder='123-456'
+                        placeholder='12345'
                         value={id_code}
                         onChange={handleIdCode}
                     />
