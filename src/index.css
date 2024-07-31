@@ -19,7 +19,7 @@
 }
 
 .titleWrap {
-    margin-top: 130px;
+    margin-top: 20px;
     font-size: 20px;
     font-weight: 700;
     color: #262626;
@@ -27,7 +27,7 @@
 }
 
 .contentWrap {
-    margin-top: 20px;
+    margin-top: 10px;
     flex: 1;
 }
 
@@ -80,11 +80,21 @@
     background-color: #5B84FF;
     border-radius: 8px;
     margin-left: 10%;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     cursor: pointer;
 }
 
 .bottomButton:disabled {
     background-color: #A0A0A0;
     color: white;
+}
+
+.logoWrap {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.logoWrap img {
+    width: 60px;
 }

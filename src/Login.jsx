@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import logo from './assets/logo.png';
 
 export default function Login() {
     const [id, setId] = useState('');
@@ -54,6 +55,9 @@ export default function Login() {
 
     return (
         <div className='page'>
+            <div className='logoWrap'>
+                <img src={logo} alt='logo' />
+            </div>
             <div className='titleWrap'>
                 TeamMo의 모든 서비스를 이용하기
                 <br/>
